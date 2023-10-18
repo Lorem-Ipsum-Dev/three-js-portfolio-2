@@ -40,7 +40,7 @@
 
         &--inner {
             height: 100%;
-            width: 50%;
+            width: 0%;
             border-radius: 2px;
             background: $light-green-color;
             box-shadow: 1px 1px 20px $green-color;
@@ -105,6 +105,18 @@
 
         &--number {
             color: $light-green-color;
+            text-shadow: 1px 1px 20px $green-color;
+        }
+    }
+    &__width_animation {
+        animation: width_animation 500ms forwards;
+        @keyframes width_animation {
+            0% {
+                width: 85%;
+            }
+            100% {
+                width: 280px;
+            }
         }
     }
 }
