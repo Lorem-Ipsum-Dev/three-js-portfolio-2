@@ -119,4 +119,16 @@
             }
         }
     }
+    &__svg {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        animation: rotateSphere 50s linear infinite;
+        @keyframes rotateSphere {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
 }
