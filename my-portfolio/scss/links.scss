@@ -1,0 +1,9 @@
+.coolLink {
+    position: relative;
+    &:before {
+        position:absolute;
+        width:100%;
+        height:2px;
+        background:currentColor;
+    }
+}
