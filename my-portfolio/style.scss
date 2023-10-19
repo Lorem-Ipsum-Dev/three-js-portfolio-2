@@ -49,6 +49,15 @@ img, video, canvas, svg {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
 /* ----- VARIABLES -----*/
 $green-color: #88ffa29d;
 $light-green-color: #6cff8d;
