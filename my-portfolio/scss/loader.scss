@@ -11,6 +11,7 @@
     z-index: 100;
     background: $dark-color;
     display: grid;
+    //display: none;
     place-items: center;
     color: white;
     font-family: 'Russo One', sans-serif;
@@ -116,6 +117,20 @@
             }
             100% {
                 width: 280px;
+            }
+        }
+    }
+    &__svg {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        box-shadow: 2px 2px 500px #321148, 0px 0px 50px #1a4366;
+        border-radius: 50%;
+        animation: rotateSphere 50s linear infinite;
+        @keyframes rotateSphere {
+            to {
+                transform: rotate(360deg);
             }
         }
     }
