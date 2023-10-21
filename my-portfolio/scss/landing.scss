@@ -35,4 +35,14 @@
             }
         }
     }
+
+    .socials {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }

@@ -89,3 +89,28 @@
         font-size: 24px;
     }
 }
+
+.coloredIcon {
+    color: $light-color;
+    font-size: 35px;
+    &:hover {
+        animation: coloredIconAnimation 0.2s infinite;
+    }
+    @keyframes coloredIconAnimation {
+        0% {
+            text-shadow: 3px 4px $danger-color, -3px -6px $info-color;
+        }
+        25% {
+            text-shadow: -3px 4px $danger-color, 3px 4px $info-color;
+        }
+        50% {
+            text-shadow: 3px -4px $danger-color, -5px 4px $info-color;
+        }
+        75% {
+            text-shadow: -5px -4px $danger-color, -3px -4px $info-color;
+        }
+        100% {
+            text-shadow: -3px 0 $danger-color, 3px 4px $info-color;
+        }
+    }
+}
