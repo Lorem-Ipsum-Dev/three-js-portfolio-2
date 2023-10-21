@@ -1,3 +1,4 @@
+@import "../style.scss";
 .coolLink {
     position: relative;
     display: grid;
@@ -46,6 +47,8 @@
     width: 175px;
     height: 120px;
     background: none;
+    font-weight: 700;
+    font-size: 24px;
     color: #fff;
     &:before,
     &:after {
@@ -57,13 +60,32 @@
     }
     &::before {
         content: "";
-        background: #fff;
-        border-radius: 58% 45% 55% 45% / 60% 45% 55% 44% ;
-        transform: rotate(20deg);
-        transition: transform 0.3s;
+        background: $light-color;
+        clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+        transition: clip-path 0.5s cubic-bezier(.69,-1.09,.24,1.81);
     }
     &:hover:before {
-        border-radius: 62% 38% 59% 41% / 28% 47% 53% 72% ;
+        clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+    }
+    & span {
+        mix-blend-mode: difference;
+    }
+
+    &:after {
+        content: "";
+        height: 85%;
+        width: 95%;
+        top: 6px;
+        border: 1px solid $light-color;
+        border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
         transform: rotate(-20deg);
+        transition: transform 0.5s cubic-bezier(.69,-1.09,.24,1.81);
+    }
+    &:hover:after {
+        transform: translate3d(0,-5px,0);
+    }
+    @media (max-width:800px) {
+        transform: scale3D(0.7, 0.7, 0.7);
+        font-size: 24px;
     }
 }

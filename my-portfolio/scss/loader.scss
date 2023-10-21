@@ -13,7 +13,7 @@
     //display: grid;
     display: none;
     place-items: center;
-    color: white;
+    color: $light-color;
     font-family: 'Russo One', sans-serif;
 
     &__box {
@@ -62,7 +62,7 @@
             height: 15px;
             margin: 0 3px;
             border-radius: 50%;
-            background: white;
+            background: $light-color;
             box-shadow: 1px 1px 20px $green-color;
             animation: pulse 1s infinite;
             @keyframes pulse {
@@ -95,7 +95,7 @@
         position: absolute;
         top: 70%;
         left: 0%;
-        color: white;
+        color: $light-color;
         font-size: 20px;
         font-weight: 700;
         width: 100%;
