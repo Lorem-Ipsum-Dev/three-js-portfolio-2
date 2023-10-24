@@ -10,8 +10,8 @@
     width: 100%;
     z-index: 100;
     background: $dark-color;
-    //display: grid;
-    display: none;
+    display: grid;
+    //display: none;
     place-items: center;
     color: $light-color;
     font-family: 'Russo One', sans-serif;
@@ -110,7 +110,7 @@
         }
     }
     &__width_animation {
-        animation: width_animation 500ms forwards;
+        animation: width_animation 500ms 500ms forwards;
         @keyframes width_animation {
             0% {
                 width: 85%;
