@@ -27,11 +27,12 @@ setTimeout(() => {
                 borderColor: "transparent",
             });
             tl.to(".loading__svg", {
-                duration: 20,
+                duration: 0.1,
                 opacity: 0.5,
             });
             gsap.to(".loading", {
-                duration: 2,
+                delay: 3,
+                duration: 0.1,
                 zIndex:1,
                 background: "black",
                 opacity:0.5,
