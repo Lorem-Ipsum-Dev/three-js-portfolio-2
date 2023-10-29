@@ -6,6 +6,7 @@
     background: #111;
     color: white;
     overflow: hidden;
+    opacity: 0;
 
     .header {
         position: absolute;
@@ -118,6 +119,42 @@
                     }
                     
                 }
+            }
+        }
+    }
+    .intro {
+        position: absolute;
+        top: 20%;
+        left: 1rem;
+        width: 100%;
+        height: 60%;
+        z-index: 2;
+        color: $light-color;
+        & h4 {
+            font-size: 33px;
+        }
+        & h1 {
+            font-size: 35px;
+            width: 93%;
+            padding-top: 1rem;
+        }
+        @media (min-width: 600px) {
+            & h4 {
+                font-size: 40px;
+            }
+            & h1 {
+                font-size: 55px;
+            }
+        }
+        @media (min-width: 1200px) {
+            & {
+                left: 6%;
+            }
+            & h4 {
+                font-size: 50px;
+            }
+            & h1 {
+                font-size: 70px;
             }
         }
     }

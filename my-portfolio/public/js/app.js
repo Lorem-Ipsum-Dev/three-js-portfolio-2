@@ -30,12 +30,16 @@ setTimeout(() => {
                 duration: 0.1,
                 opacity: 0.5,
             });
+            tl.to(".landing", {
+                duration: 0.2,
+                opacity: 1
+            })
             gsap.to(".loading", {
                 delay: 3,
                 duration: 0.1,
                 zIndex:1,
                 background: "black",
-                opacity:0.5,
+                opacity:0.2
             });
         }
     }, 20);

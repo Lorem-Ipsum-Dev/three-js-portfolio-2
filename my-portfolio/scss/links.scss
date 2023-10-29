@@ -38,6 +38,10 @@
     &:hover span {
         transform: translate3D(0, -150%, 0);
     }
+    @media (max-width:800px) {
+        transform: scale3D(0.7, 0.7, 0.7);
+        font-size: 24px;
+    }
 }
 
 .header-button {
