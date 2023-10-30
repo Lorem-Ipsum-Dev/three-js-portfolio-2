@@ -1,0 +1,30 @@
+.skills {
+    position: relative;
+    font-size: 40px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    word-wrap: none;
+    padding-top: 1.5rem;
+    &__header {
+        font-weight: 600;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    &__text {
+        position:absolute;
+        white-space: nowrap;
+        &--left {
+            left: 0;
+            top: 8rem;
+        }
+        &--right {
+            right: 0;
+            top: 12rem;
+        }
+    }
+    span.skills__space {
+        display: inline-block;
+        width: 4rem;
+    }
+}

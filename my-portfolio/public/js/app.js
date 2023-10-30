@@ -3,6 +3,7 @@ import gsap from "../../node_modules/gsap";
 const bar = document.querySelector('.loading__bar--inner');
 const counter_number = document.querySelector('.loading__counter--number');
 const tl = gsap.timeline();
+
 let counter = 0;
 setTimeout(() => {
     let barInterval = setInterval(() => {
@@ -31,6 +32,7 @@ setTimeout(() => {
                 opacity: 0.5,
             });
             tl.to(".landing", {
+                delay:0.2,
                 duration: 0.2,
                 opacity: 1
             })
