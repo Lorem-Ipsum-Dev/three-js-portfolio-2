@@ -129,6 +129,7 @@
         left: 1rem;
         width: 100%;
         height: 60%;
+        opacity: 0;
         z-index: 2;
         color: $light-color;
         & h4 {
@@ -139,12 +140,16 @@
             width: 93%;
             padding-top: 1rem;
         }
+        & span {
+            display: inline-block;
+        }
         @media (min-width: 600px) {
             & h4 {
                 font-size: 40px;
             }
             & h1 {
-                font-size: 55px;
+                font-size: 40px;
+                //font-weight: 900;
             }
         }
         @media (min-width: 1200px) {
