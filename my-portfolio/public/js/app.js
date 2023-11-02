@@ -13,6 +13,7 @@ setTimeout(() => {
         if (counter === 101) {
             clearInterval(barInterval);
             gsap.to(".loading__text, .loading__counter", {
+                delay: 1,
                 duration: 1,
                 opacity:0
             });
@@ -22,26 +23,27 @@ setTimeout(() => {
                 width: "0%",
             });
             tl.to(".loading__box", {
+                delay: .5,
                 duration: 1,
                 height: "500px",
                 borderRadius: "50%",
                 borderColor: "transparent",
             });
-            tl.to(".loading__svg", {
-                duration: 0.1,
-                opacity: 0.5,
-            });
-            tl.to(".landing", {
-                delay:0.2,
-                duration: 0.2,
-                opacity: 1
-            })
-            gsap.to(".loading", {
-                delay: 3,
-                duration: 0.1,
+            tl.to(".loading", {
+                //delay: 3,
+                duration: 2,
                 zIndex:1,
                 background: "black",
                 opacity:0.2
+            });
+            tl.to(".landing", {
+                delay:0.2,
+                duration: 0.8,
+                opacity: 1
+            })
+            tl.to(".loading__svg", {
+                duration: 0.5,
+                opacity: 0.5,
             });
         }
     }, 20);
